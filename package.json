@@ -1,5 +1,7 @@
 {
   "name": "daemon-landing-page",
+  "version": "0.5.0",
+  "description": "The landing page for Daemon which contains all of the necessary information about the platform! [Live link](https://daemon.computer)",
   "type": "module",
   "scripts": {
     "dev": "vinxi dev",
