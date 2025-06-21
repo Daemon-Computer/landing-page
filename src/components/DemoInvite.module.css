@@ -1,0 +1,87 @@
+.demoButton {
+    display: inline-block;
+    padding: 10px 24px;
+    background: #8d46ff;
+    color: white;
+    font-weight: bold;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    box-shadow: 4px 4px 0px #0c046f;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.demoButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    animation: shimmer 2s infinite;
+    pointer-events: none;
+}
+
+.demoButton:hover {
+    background: #9a5cff;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #0c046f;
+}
+
+.demoButton:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+/* Navbar demo button styles */
+.navDemoButton {
+    background: #fff3a0;
+
+    border-top: 2px solid #fffbe1;
+    border-left: 2px solid #fffbe1;
+    border-right: 2px solid #d6c84e;
+    border-bottom: 2px solid #d6c84e;
+    padding: 4px 8px;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 12px;
+    cursor: pointer;
+    color: #0c046f;
+    white-space: nowrap;
+}
+
+.navDemoButton:active {
+    background-color: #ffed82;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

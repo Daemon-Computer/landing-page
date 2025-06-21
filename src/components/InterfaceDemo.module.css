@@ -1,0 +1,271 @@
+.videoContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    background-color: black;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.videoPlaceholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+}
+
+.playButton {
+    background-color: #e1e1e1;
+    border: 2px solid #985dff;
+    border-radius: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #0c046f;
+    cursor: pointer;
+}
+
+.playButton:active {
+    background-color: #c3b9ff;
+}
+
+.playButtonDisabled {
+    background-color: #d4d0c8;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    border-radius: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #808080;
+    cursor: not-allowed;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+
+/* Vertical Gameplay Loop (preserved for reference) */
+.gameplayLoop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.gameplayStepContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.gameplayStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1e1e1;
+    border: 2px solid #985dff;
+    width: 100px;
+    height: 80px;
+    padding: 8px;
+    margin: 4px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #0c046f;
+}
+
+/* Horizontal Gameplay Loop (new) */
+.gameplayLoopHorizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 10px 0;
+    min-width: 260px;
+}
+
+.gameplayLoopHorizontal::-webkit-scrollbar {
+    display: none;
+}
+
+.gameplayStepContainerHorizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gameplayStepHorizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1e1e1;
+    padding: 8px;
+    margin: 0 4px;
+    border: 2px solid #985dff;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    transition: all 0.3s ease;
+    color: #0c046f;
+    font-family: "Pixelated MS Sans Serif", Arial, sans-serif;
+}
+
+.gameplayStepHorizontal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activeGameplayStep {
+    background-color: #d2c3ff;
+    transform: scale(1.03);
+    box-shadow: 0 0 6px rgba(152, 93, 255, 0.4);
+    border-color: #8d46ff;
+    border-width: 2px;
+}
+
+.stepConnectorHorizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+}
+
+.connectorArrowHorizontal {
+    font-weight: bold;
+    font-size: 20px;
+    color: #985dff;
+    line-height: 1;
+    margin: 0 4px;
+}
+
+/* Preserved styles */
+.stepConnector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 24px;
+    position: relative;
+}
+
+.connectorLine {
+    width: 2px;
+    height: 16px;
+    background-color: #4604ec;
+}
+
+.connectorArrow {
+    color: #4604ec;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.featureList {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #0c046f;
+}
+
+.featureList li {
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .gameplayStepHorizontal {
+        width: 70px;
+        height: 70px;
+        font-size: 0.875rem;
+    }
+
+    .connectorLineHorizontal {
+        width: 20px;
+    }
+
+    .stepConnectorHorizontal {
+        width: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gameplayStepHorizontal {
+        width: 60px;
+        height: 60px;
+        font-size: 0.75rem;
+    }
+
+    .stepConnectorHorizontal {
+        width: 25px;
+    }
+
+    .connectorArrowHorizontal {
+        font-size: 16px;
+    }
+
+    .playButtonDisabled,
+    .playButton {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-height: 700px) {
+    .gameplayStepHorizontal {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-height: 600px) {
+    .gameplayStepHorizontal {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Add combined media query for both height and width */
+@media (max-height: 600px) and (max-width: 640px) {
+    .gameplayStepHorizontal {
+        width: 50px;
+        height: 50px;
+        font-size: 0.7rem;
+        padding: 4px;
+    }
+
+    .stepConnectorHorizontal {
+        width: 20px;
+    }
+
+    .connectorArrowHorizontal {
+        font-size: 14px;
+    }
+}

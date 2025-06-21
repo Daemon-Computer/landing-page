@@ -1,0 +1,22 @@
+.asciiWindow {
+    background: #9a5cff;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    padding: 3px
+}
+
+.windowTitle {
+    align-items: center;
+    background: linear-gradient(90deg, #4604ec, #7a3ff8);
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 2px 3px 3px;
+
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.windowBody {
+    margin: 8px;
+    color: #0c046f;
+}

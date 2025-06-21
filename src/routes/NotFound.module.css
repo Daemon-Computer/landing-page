@@ -1,0 +1,51 @@
+.errorIcon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #0c046f;
+    border: 1px solid #985dff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.errorMessage {
+    font-family: "Pixelated MS Sans Serif", Arial;
+    color: #0c046f;
+}
+
+.hexCode {
+    font-family: monospace;
+    background-color: #e1e1e1;
+    border: 1px solid #985dff;
+    padding: 1px 4px;
+    font-size: 90%;
+}
+
+.bulletPoint {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+
+.bulletPoint::before {
+    content: "•";
+    margin-right: 6px;
+    color: #4604ec;
+}
+
+.blinkingCursor::after {
+    content: '_';
+    animation: blink 1s step-start infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

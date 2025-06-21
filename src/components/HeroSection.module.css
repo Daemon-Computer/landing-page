@@ -1,0 +1,51 @@
+.logo {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.logoLoaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tagline {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s;
+    color: #0c046f;
+}
+
+.taglineLoaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.subtitle {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease 0.6s, transform 0.8s ease 0.6s;
+    color: #0c046f;
+}
+
+.subtitleLoaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ctaContainer {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease 0.9s, transform 0.8s ease 0.9s;
+    max-width: 500px;
+    width: 100%;
+}
+
+.ctaLoaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ctaContainer h3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    color: #0c046f;
+}

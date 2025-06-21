@@ -1,0 +1,121 @@
+.window {
+    background: white;
+
+    border-top: 2px solid #e1e1e1;
+    border-left: 2px solid #0dfdf7;
+    border-right: 2px solid #11b3f4;
+    border-bottom: 2px solid #3d00f3;
+
+    padding: 4px;
+    position: relative;
+}
+
+.titleBar {
+    align-items: center;
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    padding: 3px 6px;
+    margin: 4px 8px;
+
+    border-top: 2px solid #e1e1e1;
+    border-left: 2px solid #e1e1e1;
+    border-right: 2px solid #904cff;
+    border-bottom: 2px solid #904cff;
+
+    width: fit-content;
+}
+
+.titleBarText {
+    color: #4604ec;
+    font-weight: bold;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.windowBody {
+    margin: 8px;
+    background-color: #b0a9e4;
+    color: #0c046f;
+
+    border-top: 4px solid #8d46ff;
+    border-left: 4px solid #8d46ff;
+    border-right: 4px solid #c3c3c2;
+    border-bottom: 4px solid #c3c3c2;
+}
+
+.button {
+    background: white;
+    border: 2px solid #985dff;
+    border-radius: 0;
+    min-height: 23px;
+    min-width: 75px;
+    padding: 0 12px;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 11px;
+    cursor: pointer;
+    color: #0c046f;
+}
+
+.button:active {
+    background-color: #c3b9ff;
+}
+
+.buttonDisabled {
+    background: #d4d0c8;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    border-radius: 0;
+    min-height: 23px;
+    min-width: 75px;
+    padding: 0 12px;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 11px;
+    cursor: not-allowed;
+    color: #808080;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+
+.input {
+    background-color: #e1e1e1;
+    border: 2px solid #985dff;
+    box-sizing: border-box;
+    padding: 3px 4px;
+    height: 24px;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 11px;
+    color: #0c046f;
+    outline: none;
+}
+
+.inputDisabled {
+    background-color: #d4d0c8;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    box-sizing: border-box;
+    padding: 3px 4px;
+    height: 24px;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 11px;
+    color: #808080;
+    cursor: not-allowed;
+    outline: none;
+}
+
+.progressBar {
+    border: 2px solid #985dff;
+    box-sizing: border-box;
+    height: 20px;
+    padding: 4px;
+    position: relative;
+}
+
+.progressBarFill {
+    background-color: #00cc99;
+    height: 100%;
+}

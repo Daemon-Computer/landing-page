@@ -1,0 +1,122 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #9a5cff;
+    border-bottom: 2px solid #985dff;
+    z-index: 1000;
+    height: 40px;
+    padding: 0;
+}
+
+.navbarInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 100%;
+}
+
+.logo {
+    font-weight: bold;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 14px;
+    cursor: pointer;
+    color: #0c046f;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logoMobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2px 0;
+}
+
+.logoImage {
+    height: 64px;
+    width: auto;
+    display: block;
+}
+
+.logoImageMobile {
+    height: 64px !important;
+    max-width: 100%;
+}
+
+.navLinks {
+    display: flex;
+    gap: 8px;
+}
+
+.navLink {
+    background: #e1e1e1;
+
+    border-top: 2px solid #e1e1e1;
+    border-left: 2px solid #e1e1e1;
+    border-right: 2px solid #904cff;
+    border-bottom: 2px solid #904cff;
+    padding: 4px 8px;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 12px;
+    cursor: pointer;
+    color: #0c046f;
+    white-space: nowrap;
+}
+
+.navLink:active {
+    background-color: #c3b9ff;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 8px;
+}
+
+.socialIcon {
+    font-size: 16px;
+    text-decoration: none;
+    color: #0c046f;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto !important;
+        padding: 0 !important;
+    }
+
+    .navbarInner {
+        flex-direction: column;
+        padding: 0 !important;
+        height: auto !important;
+    }
+
+    .navLinks {
+        order: 2;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: center;
+        padding-bottom: 4px;
+        gap: 5px !important;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .navLinks::-webkit-scrollbar {
+        display: none;
+    }
+
+    .socialIcons {
+        order: 3;
+        margin-top: 4px;
+    }
+
+    @media (max-width: 380px) {
+        .socialIcons {
+            display: none;
+        }
+    }
+}

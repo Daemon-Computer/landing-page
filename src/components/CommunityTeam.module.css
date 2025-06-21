@@ -1,0 +1,117 @@
+.discordFrame,
+.twitterFeed {
+    margin-bottom: 16px;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+    background-color: #9a5cff;
+    color: #0c046f;
+}
+
+.chatHeader,
+.feedHeader {
+    background: #e1e1e1;
+    padding: 4px 8px;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 11px;
+    color: #4604ec;
+}
+
+.chatMessages,
+.tweets {
+    padding: 8px;
+    max-height: 150px;
+    overflow-y: auto;
+    color: #0c046f;
+}
+
+.chatBubble,
+.tweet {
+    margin-bottom: 8px;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 11px;
+}
+
+.username,
+.tweetUser {
+    font-weight: bold;
+    margin-right: 4px;
+    color: #4604ec;
+}
+
+.achievements {
+    margin-top: 16px;
+}
+
+.achievementBadge {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #e1e1e1;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    margin: 4px;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 11px;
+    color: #0c046f;
+}
+
+.teamGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.teamMember {
+    display: flex;
+    align-items: center;
+    background: #9a5cff;
+    padding: 8px;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    color: #0c046f;
+}
+
+.avatarContainer {
+    margin-right: 12px;
+}
+
+.pixelAvatar {
+    width: 64px;
+    height: 64px;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1e1e1;
+}
+
+.avatarImage {
+    width: 48px;
+    height: 48px;
+}
+
+.memberInfo {
+    flex: 1;
+}
+
+.memberName {
+    font-weight: bold;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 12px;
+    color: #4604ec;
+}
+
+.memberRole {
+    font-size: 11px;
+    color: #0c046f;
+    margin-bottom: 4px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 6px;
+}
+
+.socialIcon {
+    font-size: 14px;
+    cursor: pointer;
+    color: #0c046f;
+}
