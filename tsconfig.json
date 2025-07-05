@@ -1,19 +1,26 @@
 {
   "compilerOptions": {
+    "strict": true,
     "target": "ESNext",
     "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
+    "types": ["node", "vinxi/types/client"],
     "allowJs": true,
     "noEmit": true,
-    "strict": true,
-    "types": ["vinxi/types/client"],
     "isolatedModules": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
     "paths": {
       "~/*": ["./src/*"]
     }
-  }
+  },
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules", "dist", "build"]
 }

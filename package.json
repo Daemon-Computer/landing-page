@@ -9,10 +9,18 @@
     "start": "vinxi start"
   },
   "dependencies": {
+    "@eslint/js": "^9.29.0",
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.15.0",
     "@solidjs/start": "^1.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-solid": "^0.14.5",
+    "prettier": "^3.6.1",
     "solid-js": "^1.9.5",
+    "typescript": "^5.8.3",
     "vinxi": "^0.5.3"
   },
   "devDependencies": {
